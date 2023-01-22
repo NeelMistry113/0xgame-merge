@@ -1,0 +1,17 @@
+// tailwind.scss
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// Font Family
+@import "./fonts/font.scss";
+
+// container
+@import './components/_container.scss';
+
+// design system component
+@import './components/_type.scss';
+@import './components/_button.scss';
+// @import './components/_tags.scss';
+// @import './components/_input.scss';
+// @import './components/_dropdown.scss';

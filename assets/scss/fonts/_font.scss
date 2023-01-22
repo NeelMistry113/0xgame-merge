@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Open Sauce One";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("~/assets/scss/fonts/OpenSauceOne-Regular.ttf") format("ttf"), url("~/assets/scss/fonts/OpenSauceOne-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sauce One";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("~/assets/scss/fonts/OpenSauceOne-SemiBold.ttf") format("ttf"), url("~/assets/scss/fonts/OpenSauceOne-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sauce One";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("~assets/scss/fonts/OpenSauceOne-ExtraBold.ttf") format("ttf"), url("~assets/scss/fonts/OpenSauceOne-ExtraBold.woff") format("woff");
+}

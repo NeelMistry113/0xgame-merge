@@ -1,0 +1,88 @@
+.display-1 {
+  @apply text-8xl leading-tight font-heavy;
+  letter-spacing: -0.01em;
+}
+
+.display-2 {
+  @apply text-7xl leading-tight font-heavy;
+  letter-spacing: -0.01em;
+}
+
+.h1,
+h1 {
+  @apply text-6xl leading-tight font-heavy;
+  letter-spacing: -0.005em;
+}
+
+.h2,
+h2 {
+  @apply text-5xl leading-tight font-heavy;
+}
+
+.h3,
+h3 {
+  @apply text-4xl leading-snug font-heavy;
+}
+
+.h4,
+h4 {
+  @apply text-3xl leading-snug font-heavy;
+}
+
+.h5,
+h5 {
+  @apply text-2xl leading-normal font-heavy;
+}
+
+.h6,
+h6 {
+  @apply text-xl leading-normal font-heavy;
+}
+
+.label-xl {
+  @apply text-xl leading-loose font-semibold;
+}
+
+.label-lg {
+  @apply text-lg leading-loose font-semibold;
+}
+
+.label-md {
+  @apply text-base leading-3 font-semibold;
+}
+
+.label-sm {
+  @apply text-md leading-3 font-semibold;
+}
+
+.label-xs {
+  @apply text-sm leading-3 font-semibold;
+}
+
+.body-xl {
+  @apply text-xl leading-loose font-normal;
+}
+
+.body-lg {
+  @apply text-lg leading-loose font-normal;
+}
+
+.body-md {
+  @apply text-base leading-3 font-normal;
+}
+
+.body-sm {
+  @apply text-md leading-3 font-normal;
+}
+
+.body-xs {
+  @apply text-sm leading-3 font-normal;
+}
+
+.capital-lg {
+  @apply text-md leading-normal font-semibold uppercase;
+}
+
+.capital {
+  @apply text-sm leading-normal font-semibold uppercase;
+}
