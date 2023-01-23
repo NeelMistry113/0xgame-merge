@@ -29,7 +29,7 @@
           >
             <!-- Will Mumbai indians can win their first match against Royal -->
             <!-- challenger bangalore? -->
-            <!-- {{ question }} -->
+            {{ question }}
           </h3>
         </div>
       
@@ -166,22 +166,22 @@ export default {
     },
   },
 
-  // data() {
-  //   return {
-  //     question: null,
-  //     description: null,
-  //   };
-  // },
+  data() {
+    return {
+      question: null,
+      description: null,
+    };
+  },
 
-  // async mounted() {
-  //   const { question, description } =
-  //     await this.poolRegistryContractInstance.methods
-  //       .getPoolByAddress(this.address)
-  //       .call();
+  async mounted() {
+    const { question, description } =
+      await this.poolRegistryContractInstance.methods
+        .getPoolByAddress(this.address)
+        .call();
 
-  //   this.question = question;
-  //   this.description = description;
-  // },
+    this.question = question;
+    this.description = description;
+  },
 };
 </script>
 
