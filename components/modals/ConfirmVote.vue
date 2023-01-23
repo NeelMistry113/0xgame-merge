@@ -1,7 +1,7 @@
 <template>
   <!-- remove class this is just for demo -->
   <div
-    :class="['grid grid-flow-col sm:w-full gap-6 sm:gap-4 ', $style.container]"
+    :class="['grid grid-flow-col sm:w-full gap-6 sm:gap-4 ', $style.container]" 
   >
     <button
       class="bg-primary-500/[0.05] hover:bg-primary-500/[0.1] border border-primary-900 rounded-lg text-left min-w-[200px] sm:min-w-0 p-5"

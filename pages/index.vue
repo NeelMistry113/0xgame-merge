@@ -10,12 +10,26 @@
 
     <tabs :options="{ useUrlFragment: false }">
       <tab name="Open">
-        <div class="grid gap-7 container">
-          <card v-for="(item, index) in 4" :key="index" :open="true" />
+        <div class="grid gap-7 container" v-if="poolsAddresses.length">
+          <card
+                v-for="(address, index) in poolsAddresses"
+                :address="address"
+                :pool-registry-contract-instance="poolRegistryContractInstance"
+                :key="index"
+              />
+          <!-- <card v-for="(item, index) in 1" :key="index" :open="true" /> -->
           <!-- <loading-card v-for="(item, index) in 4" :key="index" /> -->
         </div>
 
-        <!-- card called from smart contract -->
+        <div class="flex justify-center mt-10">
+          <button type="button" class="btn btn-secondary btn-lg">
+            Load more
+          </button>
+        </div>
+      </tab>
+      <tab name="Pending">
+        <div class="grid gap-7 container">
+          <!-- <card /> -->
           <div
               v-if="poolsAddresses.length"
               class="grid grid-cols-3 gap-6 container mx-auto"
@@ -27,18 +41,6 @@
                 :key="index"
               />
           </div>
-        <!-- card call -->
-
-
-        <div class="flex justify-center mt-10">
-          <button type="button" class="btn btn-secondary btn-lg">
-            Load more
-          </button>
-        </div>
-      </tab>
-      <tab name="Pending">
-        <div class="grid gap-7 container">
-          <card />
           <!-- <loading-card v-for="(item, index) in 4" :key="index" /> -->
         </div>
         <div class="flex justify-center mt-10">
@@ -48,8 +50,15 @@
         </div>
       </tab>
       <tab name="Resolved">
-        <div class="grid gap-7 container">
-          <card v-for="(item, index) in 4" :key="index" :resolved="true" />
+        <div class="grid gap-7 container" v-if="poolsAddresses.length">
+
+          <card
+                v-for="(address, index) in poolsAddresses"
+                :address="address"
+                :pool-registry-contract-instance="poolRegistryContractInstance"
+                :key="index"
+              />
+          <!-- <card v-for="(item, index) in 4" :key="index" :resolved="true" /> -->
           <!-- <loading-card v-for="(item, index) in 4" :key="index" /> -->
         </div>
         <div class="flex justify-center mt-10">
@@ -65,8 +74,14 @@
           <statistics v-for="item in 3" :key="item" />
         </div>
 
-        <div class="grid gap-7 container">
-          <card v-for="(item, index) in 4" :key="index" :my-bets="true" />
+        <div class="grid gap-7 container" v-if="poolsAddresses.length">
+          <card
+                v-for="(address, index) in poolsAddresses"
+                :address="address"
+                :pool-registry-contract-instance="poolRegistryContractInstance"
+                :key="index"
+              />
+          <!-- <card v-for="(item, index) in 4" :key="index" :my-bets="true" /> -->
           <!-- <loading-card v-for="(item, index) in 4" :key="index" /> -->
         </div>
         <div class="flex justify-center mt-10">

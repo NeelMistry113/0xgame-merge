@@ -27,8 +27,8 @@
           <h3
             class="h5 lg:text-xl md:text-lg sm:text-lg md:mb-7 sm:mb-6 font-semibold max-w-[676px] lg:max-w-[400px] flex-grow"
           >
-            Will Mumbai indians can win their first match against Royal
-            challenger bangalore?
+            <!-- Will Mumbai indians can win their first match against Royal -->
+            <!-- challenger bangalore? -->
             <!-- {{ question }} -->
           </h3>
         </div>
@@ -176,7 +176,7 @@ export default {
   // async mounted() {
   //   const { question, description } =
   //     await this.poolRegistryContractInstance.methods
-  //       .getPoolByAddress(this.$route.params.slug)
+  //       .getPoolByAddress(this.address)
   //       .call();
 
   //   this.question = question;
