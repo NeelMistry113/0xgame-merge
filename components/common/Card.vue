@@ -36,6 +36,7 @@
 
         <!-- Yes and no action -->
         <vote-actions v-if="open" />
+        <!-- <vote-actions /> -->
 
         <!-- Claim reward action (resolved tab) -->
         <div
@@ -107,7 +108,7 @@
       </div>
       <div class="flex items-center">
         <span
-          v-if="resolved || myBets"
+        v-if="resolved || myBets"
           class="text-gray-400 label-sm mr-3 flex items-center sm:mt-5"
         >
           Resolved as:
@@ -127,7 +128,6 @@
       </div>
     </section>
   </div>
-
 </nuxt-link>
 </template>
 

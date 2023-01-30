@@ -108,7 +108,8 @@ export default {
   },
   data () {
     return{
-      errorMessage: ''
+      errorMessage: '',
+      login: false
     }
   },
 
@@ -177,6 +178,8 @@ export default {
     onCreate() {
       this.$router.push({ name: "pool-create" });
     },
+
+    // login: true,
 
   }
 };

@@ -16,9 +16,10 @@
                 :address="address"
                 :pool-registry-contract-instance="poolRegistryContractInstance"
                 :key="index"
+                :open="true"
               />
           <!-- <card v-for="(item, index) in 1" :key="index" :open="true" /> -->
-          <!-- <loading-card v-for="(item, index) in 4" :key="index" /> -->
+          <!-- <loading-card v-for="(item, index) in 1" :key="index" /> -->
         </div>
 
         <div class="flex justify-center mt-10">
@@ -48,7 +49,8 @@
             Load more
           </button>
         </div>
-      </tab>
+      </tab> 
+      
       <tab name="Resolved">
         <div class="grid gap-7 container" v-if="poolsAddresses.length">
 
